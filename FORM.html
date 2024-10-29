@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">
+            Name : <input  required type="text" placeholder="Name of the Candidate">
+        </label><br><br>
+        <label for="">
+            DOB : <input type="date">
+        </label><br><br>
+        <label for="">
+            Gender : 
+            <input type="radio" name="abc">Male <!-- type=radio is used to avoid choisng the multiple options where u need to chose only one option. and name should be same for all the inputs-->
+            <input type="radio" name="abc">Female 
+            <input type="radio" name="abc">Others
+        </label><br><br>
+        <label for="">
+            Ph No : <input type="tel" pattern="{0-9}[10]" placeholder="Enter the Phone Number"> 
+        </label><br><br>
+        <label for="">
+            E-mail : <input type="email" placeholder="Enter the Email address">
+            <!-- type="email" : it will only accept the input value if the entered value matches required(email format) requirement-->
+        </label><br><br>
+        <label for="">
+            Password : <input type="password" placeholder="Enter the Password">
+            <!-- password : it won't desplay the actual characters. instead it displays as dot(.). -->
+        </label><br><br>
+        <label for="">
+            Address : <textarea name="" id="" cols="30" rows="5" placeholder="Enter the address"></textarea>
+            <!-- textarea : it will create an area of particular cols and rows. b.coz, the address will not fit perfectly into the area by input tag. -->
+        </label><br><br>
+        <label for="">
+            Quantity : <input type="number" placeholder="Enter the No. of quantity">
+            <!-- number : it will allow a us to change the value just using the (up n down)arrows. -->
+        </label><br><br>
+        <label for="">
+            Documents : 
+            <input type="checkbox">AdharCard <!-- checkbox : is used to check the multiple options at a time. -->
+            <input type="checkbox">PanCard
+            <input type="checkbox">DL
+        </label><br><br>
+        <label for="">
+            Upload Documents : <input type="file">
+            <!-- file : used to upload the file document. -->
+        </label><br><br>
+        <label for="">
+            City :
+            <select name="" id="">
+                <option value="">Select</option>
+                <option value="">Ballari</option>
+                <option value="">hosapete</option>
+                <option value="">bengaluru</option>
+                <option value="">mysuru</option>
+                <option value="">koppal</option>
+                <option value="">pune</option>
+                <option value="">ahmedabad</option>
+                <option value="">ahmednagar</option>
+                <option value="">hyderbad</option>
+                <option value="">remote</option>
+            </select>
+        </label><br><br>
+        <input type="submit">
+        <input type="button" value="Login">
+        <button>LogOut</button>
+    </form>
+</body>
+</html>
+<!-- form : -> action : it will specify destination  which page or what content it has to display when the form is submitted-->
+<!-- label: -->
+<!-- type="tel" : it will accept the the menioned characters and we can restrict the input characters -->
